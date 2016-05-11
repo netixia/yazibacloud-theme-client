@@ -1,0 +1,15 @@
+set( APPLICATION_NAME       "YaZibaCloud" )
+#set( APPLICATION_SHORTNAME  ${APPLICATION_NAME} )
+set( APPLICATION_EXECUTABLE "yazibacloud" )
+set( APPLICATION_DOMAIN     "yaziba.net" )
+set( APPLICATION_VENDOR     "YaZiba" )
+set( APPLICATION_UPDATE_URL "https://updates.yaziba.net/client/" CACHE string "URL for updater" )
+
+set( THEME_CLASS            "MyTheme" )
+set( APPLICATION_REV_DOMAIN "com.owncloud.desktopclient" )
+#set( WIN_SETUP_BITMAP_PATH  "${CMAKE_SOURCE_DIR}/admin/win/nsi" )
+set( WIN_SETUP_BITMAP_PATH  "${OEM_THEME_DIR}/installer" )
+set( THEME_INCLUDE          "${OEM_THEME_DIR}/mytheme.h" )
+# set( APPLICATION_LICENSE  "${OEM_THEME_DIR}/license.txt )
+
+set (libsync_SRCS ${libsync_SRCS} ${BRANDING_DIR}/mytheme/mytheme.cpp)
